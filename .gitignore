@@ -1,0 +1,24 @@
+# Build and IDE files
+target/
+**/target/
+*.class
+.idea/
+**/.idea/
+*.iml
+**/*.iml
+.vscode/
+.DS_Store
+*.log
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets and environment configs
+.env
+application-local.yml
+**/application-local.yml
+application.yml
+**/application.yml
+src/main/resources/application.yml
+**/src/main/resources/application.yml
