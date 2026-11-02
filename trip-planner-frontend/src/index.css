@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Airbnb-inspired: vibrant coral + teal on clean white, warm and
+     photo-forward rather than corporate. Deliberately original hues (not
+     a literal copy of Airbnb's exact brand color), same emotional register. */
+  --color-ink: #22292f;
+  --color-ink-soft: #22292fa3;
+  --color-primary: #ff6b57;
+  --color-primary-hover: #f0543f;
+  --color-primary-soft: #ff6b5714;
+  --color-teal: #00a99d;
+  --color-teal-soft: #00a99d14;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7f7f5;
+  --color-surface: #ffffff;
+  --color-border: #22292f1a;
+  --color-success: #1f9d63;
+  --color-success-soft: #1f9d6314;
+  --color-warning: #d99a1f;
+  --color-warning-soft: #d99a1f14;
+  --color-error: #e2483a;
+  --color-error-soft: #e2483a14;
+
+  --font-display: "Poppins", ui-sans-serif, sans-serif;
+  --font-body: "Nunito Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius-card: 20px;
+  --radius-control: 14px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    transition: color 0.15s ease;
+  }
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+}

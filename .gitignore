@@ -1,0 +1,30 @@
+
+# Java / Spring Boot
+target/
+**/target/
+*.class
+
+# React
+node_modules/
+**/node_modules/
+build/
+dist/
+
+# IDE
+.idea/
+**/.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+application.yml
+**/application.yml
+application-local.yml
+**/application-local.yml
