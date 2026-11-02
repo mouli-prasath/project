@@ -8,12 +8,15 @@ target/
 node_modules/
 **/node_modules/
 build/
+**/build/
 dist/
+**/dist/
 
 # IDE
 .idea/
 **/.idea/
 *.iml
+**/*.iml
 .vscode/
 .DS_Store
 
